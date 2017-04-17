@@ -133,7 +133,7 @@ hi! link Float          Normal
 hi! link Identifier     Normal
 hi! link Function       Normal
 hi! link Statement      Normal
-hi! link Conditonal     Normal
+hi! link Conditional    Normal
 hi! link Repeat         Normal
 hi! link Label          Normal
 hi! link Operator       Normal
