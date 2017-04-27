@@ -25,8 +25,7 @@ function! s:hi(group, fg, bg, style)
     endif
 endfunction
 
-" Colors
-
+" Colors 
 let s:cursor  = {'term': '242', 'gui': '#6c6c6c'}
 
 let s:bg      = {'term': '235', 'gui': '#262626'}
@@ -55,6 +54,11 @@ let s:blue    = {'term': '153', 'gui': '#afd7ff'}
 let s:blue2   = {'term': '110', 'gui': '#87afd7'}
 let s:blue3   = {'term': '24',  'gui': '#005f87'}
 
+let s:diffgreen  = {'term': '22',   'gui': '#005f00'}
+let s:diffred    = {'term': '52',   'gui': '#5f0000'}
+let s:diffblue   = {'term': '24,',  'gui': '#005f87'}
+let s:diffgrey   = {'term': '236',  'gui': '#303030'}
+
 " Highlights
 
 call s:hi('Normal', s:fg, s:bg, '')
@@ -68,10 +72,10 @@ call s:hi('CursorLine', '', '', '')
 
 call s:hi('Directory', s:fg3, '', '')
 
-call s:hi('DiffAdd', s:white, s:green2, '')
-call s:hi('DiffChange', s:fg, s:bg2, '')
-call s:hi('DiffDelete', s:white, s:red2, '')
-call s:hi('DiffText', s:white, s:orange2, '')
+call s:hi('DiffAdd', s:white, s:diffgreen, '')
+call s:hi('DiffChange', s:fg, s:diffgrey, '')
+call s:hi('DiffDelete', s:white, s:diffred, '')
+call s:hi('DiffText', s:white, s:diffblue, '')
 
 call s:hi('ErrorMsg', s:red, s:bg, '')
 
