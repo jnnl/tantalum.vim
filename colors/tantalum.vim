@@ -157,6 +157,7 @@ hi! link Tag            Normal
 hi! link Delimiter      Normal
 hi! link Debug          Normal
 hi! link Underlined     Normal
+hi! link Todo           Normal
 
 call s:hi('String', s:fg2, '', '')
 hi! link Character      String
@@ -167,4 +168,3 @@ hi! link SpecialComment Comment
 
 call s:hi('Ignore', s:fg4, s:bg, '')
 call s:hi('Error', s:fg, s:red2, '')
-call s:hi('Todo', s:fg3, s:bg2, '')
