@@ -26,6 +26,7 @@ function! s:hi(group, fg, bg, style)
 endfunction
 
 " Colors 
+
 let s:cursor  = {'term': '242', 'gui': '#6c6c6c'}
 
 let s:bg      = {'term': '235', 'gui': '#262626'}
@@ -88,7 +89,7 @@ call s:hi('SignColumn', s:fg, s:bg, '')
 
 call s:hi('IncSearch', s:black, s:yellow, '')
 
-call s:hi('LineNr', s:fg5, s:bg, '')
+call s:hi('LineNr', s:bg3, s:bg, '')
 call s:hi('CursorLineNr', s:fg3, s:bg, '')
 
 call s:hi('MatchParen', s:fg, s:bg3, '')
@@ -128,7 +129,7 @@ call s:hi('VisualNOS', s:fg, s:bg3, '')
 
 call s:hi('WarningMsg', s:orange2, '', '')
 
-call s:hi('WildMenu', s:blue2, s:bg2, '')
+call s:hi('WildMenu', s:bg, s:blue2, 'bold')
 
 hi! link Constant       Normal
 hi! link Number         Normal
